@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Game.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{% static 'js/Main.js' %}"></script>
+    <title>Game</title>
+
+</head>
+<body>
+    <h1>Detalhes do Personagem</h1>
+
+    <div id="character-details">
+        <p><strong>Nome:</strong> {{ char_name }}</p>
+        <p><strong>Classe:</strong> {{ char_job }}</p>
+        <p><strong>Vida:</strong> {{ char_life }}</p>
+        <p><strong>Ataque:</strong> {{ char_attack }}</p>
+        <p><strong>Defesa:</strong> {{ char_defense }}</p>
+
+    </div>
+
+
+
+</body>
+</html>

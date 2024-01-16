@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:  black;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.char_creator {
+    display: flex;
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    left: 185px;
+    background-color: DarkBlue ;
+    align-items: center;
+    top: 20px;
+}
+
+.titleCreator {
+    position: relative;
+    bottom: 100px;
+    left: 100px;
+    color: LightSlateGray;
+
+
+}
+
+form {
+    position: relative;
+    right: 100px;
+    top: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: LightSlateGray;
+}
+
+select, input {
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 5px;
+
+}
+
+button {
+    border-radius: 50px;
+    padding: 8px 12px;
+    background-color: LightSlateGray;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.char_select {
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    position: relative;
+    left: 185px;
+    background-color: DarkBlue ;
+
+    top: 40px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.ChoseChar {
+    position: relative;
+    justify-content: center;
+    font-size: 1,9em;
+    color: LightSlateGray;
+    display: flex;
+    top: 20px;
+
+}
+
+ul {
+    color: LightSlateGray;
+}

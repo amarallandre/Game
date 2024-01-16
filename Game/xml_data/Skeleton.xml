@@ -1,0 +1,6 @@
+<Enemy>
+    <name>Skeleton</name>
+    <life>120</life>
+    <attack>30</attack>
+    <defense>20</defense>
+</Enemy>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Char Creator</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/Main.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="{% static 'js/Main.js' %}"></script>
+</head>
+<body>
+    <div class = "char_creator">
+        <h1 class="titleCreator">Char Creator</h1>
+        <form method="post" action="{% url 'Char_Creator' %}">
+            {% csrf_token %}
+            <label for="class">Chose the class:</label>
+            <select name="class" id="class">
+                <option value="Paladin">paladin</option>
+                <option value="knight">knight</option>
+                <option value="sorcerer">sorcerer</option>
+            </select>
+
+            <br>
+
+            <label for="Name">Enter the Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <br>
+
+            <button type="submit">Char Create</button>
+        </form>
+        </div>
+    <div class="char_select">
+        <h1 class="ChoseChar">Choose Your Character</h1>
+        <ul id="char-list">
+
+
+        </ul>
+        </div>
+</body>
+</html>
